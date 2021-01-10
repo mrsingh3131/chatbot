@@ -1,0 +1,724 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - data_science
+  - machine_learning
+  - data_analysis
+  - data_visualization
+  - maths
+  - Supervised
+  - unsupervised
+  - reinforcement
+  - regression
+  - classification
+  - eda
+  - pca
+  - spatial
+  - linear_reg
+  - logistic_reg
+  - ridge_reg
+  - lasso_reg
+  - logistic_class
+  - svm
+  - knn
+  - decision
+  - random_forest
+  - Em
+  - kmeans
+  - hierarchical
+  - birch
+  - dbscan
+  - bayes
+  - ass_rules
+  - qlearning
+  - sarsa
+  - probability
+  - stats
+  - mae
+  - rmse
+  - r2
+  - confusion_matrix
+  - ROC
+  - F1_score
+  - cross_val
+  - naivebayes
+  - cluster
+  - bot_challenge
+  - tell_name
+  - play_video
+  - out_of_scope
+
+my_name:
+    use_entities:
+      - name
+mobile_number:
+    use_entities:
+      - number
+      - internship
+
+
+entities:
+  - name
+  - number
+slots:
+  name:
+    type: text
+  number:
+    type: text
+
+responses:
+  utter_greet:
+  - buttons:
+    - payload: /data_science
+      title: Data science
+    - payload: /data_analysis
+      title: Data Analysis
+    - payload: /maths
+      title: Mathematics for Machine Learning
+    - payload: /machine_learning
+      title: Machine Learning
+    - payload: /data_visualization
+      title: Data Visualization
+    text: Hey! I am a Data Science bot. Want to know about data science concepts please
+      select a category to know more.
+  utter_goodbye:
+  - text: Okay! I hope my information was knowledgeable for you. Bye!
+  utter_data_science:
+  - text: Data s a concept to unify statistics, data analysis and their related methods
+      in order to understand and analyze actual phenomena with data. It uses techniques
+      and theories drawn from many fields within the context of mathematics, statistics,
+      computer science, domain knowledge and information science.
+  utter_ml:
+  - image: https://wordstream-files-prod.s3.amazonaws.com/s3fs-public/styles/simple_image/public/images/machine-learning1.png?SnePeroHk5B9yZaLY7peFkULrfW8Gtaf&itok=yjEJbEKD
+    text: 'Machine Learning is the field of study that gives computers the capability
+      to learn without being explicitly programmed. ML is one of the most exciting
+      /    technologies that one would have ever come across. As it is evident from
+      the name, it gives the computer that makes it more similar to humans: The ability
+      to learn. Machine learning (ML) is a type of artificial intelligence (AI) that
+      allows software applications to become more accurate at predicting outcomes
+      without being explicitly programmed to do so. Machine learning algorithms use
+      historical data as input to predict new output values.'
+  utter_q:
+  - buttons:
+    - payload: /supervised
+      title: Supervised
+    - payload: /unsupervised
+      title: Unsupervised
+    - payload: /reinforcement
+      title: Reinforcement Learning
+    text: 'Do you want to know about something else in Machine learning? I can help
+      you with:'
+  utter_da:
+  - text: 'Data analysis is defined as a process of cleaning, transforming, and modeling
+      data to discover useful information for business decision-making. The purpose
+      of Data Analysis is to extract useful information from data and taking the decision
+      based upon the data analysis. Data Analysis consists of the following phases:
+      Data Requirement Gathering, Data Collection, Data Cleaning, Data Analysis, Data
+      Interpretation and Data Visualization.'
+  utter_q1:
+  - buttons:
+    - payload: /eda
+      title: EDA(Exploratory Data Analysis)
+    - payload: /pca
+      title: PCA(Principal Component Analysis)
+    - payload: /spatial
+      title: Spatial Data Analysis
+    text: 'Do you want to know about something else in Data Analysis? I can help you
+      with:'
+  utter_eda:
+  - text: 'Exploratory Data Analysis refers to the critical process of performing
+      initial investigations on data so as to discover patterns,to spot anomalies,to
+      test hypothesis and to check assumptions with the help of summary statistics
+      and graphical representations. The purpose of exploratory data analysis is to:
+      Check for missing data and other mistakes, Gain maximum insight into the data
+      set and its underlying structure, Uncover a parsimonious model, one which explains
+      the data with a minimum number of predictor variables, Check assumptions associated
+      with any model fitting or hypothesis test, Create a list of outliers or other
+      anomalies, Find parameter estimates and their associated confidence intervals
+      or margins of error and Identify the most influential variables. For more information,
+      you can visit the [link](https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15)'
+  utter_pca:
+  - text: Principal Component Analysis, or PCA, is a dimensionality-reduction method
+      that is often used to reduce the dimensionality of large data sets, by transforming
+      a large set of variables into a smaller one that still contains most of the
+      information in the large set. Reducing the number of variables of a data set
+      naturally comes at the expense of accuracy, but the trick in dimensionality
+      reduction is to trade a little accuracy for simplicity. Because smaller data
+      sets are easier to explore and visualize and make analyzing data much easier
+      and faster for machine learning algorithms without extraneous variables to process.
+      So to sum up, the idea of PCA is simple — reduce the number of variables of
+      a data set, while preserving as much information as possible. For more information,
+      you can visit the [link](https://towardsdatascience.com/a-one-stop-shop-for-principal-component-analysis-5582fb7e0a9c)
+  utter_spatial:
+  - text: Spatial analysis is a process in which you model problems geographically,
+      derive results by computer processing, and then explore and examine those results.
+      This type of analysis has proven to be highly effective for evaluating the geographic
+      suitability of certain locations for specific purposes, estimating and predicting
+      outcomes, interpreting and understanding change, detecting important patterns
+      hidden in your information, and much more.
+  utter_supervised:
+  - text: 'Supervised learning as the name indicates the presence of a supervisor
+      as a teacher. Basically supervised learning is a learning in which we teach
+      or train the machine using data which is well labeled that means some data is
+      already tagged with the correct answer. After that, the machine is provided
+      with a new set of examples(data) so that supervised learning algorithm analyses
+      the training data(set of training examples) and produces a correct outcome from
+      labeled data. Supervised learning classified into two categories of algorithms:
+      Classification: A classification problem is when the output variable is a category,
+      such as “Red” or “blue” or “disease” and “no disease”. Regression: A regression
+      problem is when the output variable is a real value, such as “dollars” or “weight”.
+      Supervised learning deals with or learns with “labeled” data.Which implies that
+      some data is already tagged with the correct answer. For more information, you
+      can visit the [link](https://towardsdatascience.com/a-brief-introduction-to-supervised-learning-54a3e3932590)'
+  utter_q2:
+  - buttons:
+    - payload: /regression
+      title: Regression
+    - payload: /classification
+      title: Classification
+    text: 'Do you want to know about:'
+  utter_reg:
+  - text: Regression analysis is a statistical method to model the relationship between
+      a dependent (target) and independent (predictor) variables with one or more
+      independent variables. More specifically, Regression analysis helps us to understand
+      how the value of the dependent variable is changing corresponding to an independent
+      variable when other independent variables are held fixed. It predicts continuous/real
+      values. In Regression, we plot a graph between the variables which best fits
+      the given datapoints, using this plot, the machine learning model can make predictions
+      about the data. In simple words, 'Regression shows a line or curve that passes
+      through all the datapoints on target-predictor graph in such a way that the
+      vertical distance between the datapoints and the regression line is minimum.'
+      The distance between datapoints and line tells whether a model has captured
+      a strong relationship or not.
+  utter_q3:
+  - buttons:
+    - payload: /linear_reg
+      title: Linear
+    - payload: /logistic_reg
+      title: Logistic
+    - payload: /lasso_reg
+      title: Lasso
+    - payload: /ridge_reg
+      title: Ridge
+    text: Do you want to know about types of regression.
+  utter_linear:
+  - text: 'Linear regression algorithm shows a linear relationship between a dependent
+      (y) and one or more independent (y) variables, hence called as linear regression.
+      Since linear regression shows the linear relationship, which means it finds
+      how the value of the dependent variable is changing according to the value of
+      the independent variable. The linear regression model provides a sloped straight
+      line representing the relationship between the variables. Consider the below
+      image: "https://static.javatpoint.com/tutorial/machine-learning/images/linear-regression-in-machine-learning.png"
+      Mathematically, we can represent a linear regression as: y= a0 + a1x + ε, Here,
+      Y= Dependent Variable (Target Variable), X= Independent Variable (predictor
+      Variable), a0= intercept of the line (Gives an additional degree of freedom),
+      a1 = Linear regression coefficient (scale factor to each input value) and ε
+      = random error. The values for x and y variables are training datasets for Linear
+      Regression model representation.'
+  utter_q4:
+  - buttons:
+    - payload: /mae
+      title: MSE
+    - payload: /rmse
+      title: RMSE
+    - payload: /r2
+      title: R-squared
+    text: Do you want to know about the model evaluation techniques for linear regression.
+  utter_mae:
+  - text: we evaluated the performance of regression models by computing the mean
+      absolute error (MAE). We defined the MAE as MAE=Σ|y−ŷ| / N, where y is the actual
+      value ŷ is the predicted value and |y−ŷ| is the absolute value of the difference
+      between the actual and predicted value. N is the number of sample points. The
+      MAE has a big advantage in that the units of the MAE are the same as the units
+      of y, the feature we want to predict. For more information you may visit the
+      [link](https://openclassrooms.com/en/courses/6401081-improve-the-performance-of-a-machine-learning-model/6519016-evaluate-the-performance-of-a-regression-model).
+  utter_rmse:
+  - text: 'Another evaluation metric for regression is the root mean square error
+      (RMSE). Its calculation is very similar to MAE, but instead of taking the absolute
+      value to get rid of the sign on the individual errors, we square the error (because
+      the square of a negative number is positive). The formula for RMSE is: √(∑(y−ŷ)^2/N).
+      RMSE gives a higher total error and the gap increases as the errors become larger.
+      It penalizes a few large errors more than a lot of small errors. For more information
+      you may visit the [link](https://openclassrooms.com/en/courses/6401081-improve-the-performance-of-a-machine-learning-model/6519016-evaluate-the-performance-of-a-regression-model)'
+  utter_r2:
+  - text: 'R-squared (R2 ) tells us the degree to which the model explains the variance
+      in the data. In other words, how much better it is than just predicting the
+      mean. It computes how much better the regression line fits the data than the
+      mean line. Another way to look at this formula is to compare the variance around
+      the mean line to the variation around the regression line: R2=var(mean)−var(line)/var(mean).
+      An R-squared of 1 indicates a perfect fit. An R-squared of 0 indicates a model
+      no better or worse than the mean. An R-squared of less than 0 indicates a model
+      worse than just predicting the mean. For more information you may visit the
+      [link](https://openclassrooms.com/en/courses/6401081-improve-the-performance-of-a-machine-learning-model/6519016-evaluate-the-performance-of-a-regression-model_'
+  utter_logr:
+  - text: "Logistic regression is a supervised learning classification algorithm used\
+      \ to predict the probability of a target variable. The nature of target or dependent\
+      \ variable is dichotomous, which means there would be only two possible classes.\
+      \ In simple words, the dependent variable is binary in nature having data coded\
+      \ as either 1 (stands for success/yes) or 0 (stands for failure/no). Mathematically,\
+      \ a logistic regression model predicts P(Y=1) as a function of X. It is one\
+      \ of the simplest ML algorithms that can be used for various classification\
+      \ problems such as spam detection, Diabetes prediction, cancer detection etc.\
+      \ Logistic regression models the data using the sigmoid function. g(z) = \f\
+      rac{1}{1 + e^-^z}For more information, you may visit the [link](https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148)"
+  utter_q5:
+  - buttons:
+    - payload: /cross_val
+      title: Cross validation
+    - payload: /confusion_matrix
+      title: Confusion Matrix
+    - payload: /F1_score
+      title: F1-Score
+    - payload: /ROC
+      title: ROC Curve
+    text: Do you want to know about the model evaluation techniques for logistic regression.
+  utter_Crossval:
+  - text: The main idea of Cross validation is to:- partition your data into training
+      data and testing data (sometimes called validation data); treat testing data
+      as unobserved, and fit your model using only the training data. After this Evaluate
+      your model on the testing data that you held out earlier, compare with the actual
+      results, and obtain a testing error. Repeat the process K times then take average
+      of the testing errors as a final performance measure. If a model is over-crowded,
+      then the performance will suffer in cross validation. The testing data, independent
+      of the training data, serves as a judge for the true performance of the model.
+      For more information, visit the [link](http://www-personal.umich.edu/~gaozheng/teaching/stats414/LogisticReg/LogisticReg.html)
+  utter_confusionMatrix:
+  - image: https://www.analyticsvidhya.com/wp-content/uploads/2015/01/Confusion_matrix.png
+    text: 'A confusion matrix is an N X N matrix, where N is the number of classes
+      being predicted. For the problem in hand, we have N=2, and hence we get a 2
+      X 2 matrix. Here are a few definitions, you need to remember for a confusion
+      matrix : Accuracy : the proportion of the total number of predictions that were
+      correct, Positive Predictive Value or Precision : the proportion of positive
+      cases that were correctly identified, Negative Predictive Value : the proportion
+      of negative cases that were correctly identified, Sensitivity or Recall : the
+      proportion of actual positive cases which are correctly identified, Specificity
+      : the proportion of actual negative cases which are correctly identified. Refer
+      the image below for working of the confusion matrix'
+  utter_f1score:
+  - text: F1-Score is the harmonic mean of precision and recall values for a classification
+      problem. Therefore, this score takes both false positives and false negatives
+      into account. Intuitively it is not as easy to understand as accuracy, but F1
+      is usually more useful than accuracy, especially if you have an uneven class
+      distribution. Accuracy works best if false positives and false negatives have
+      similar cost. If the cost of false positives and false negatives are very different,
+      it’s better to look at both Precision and Recall. The formula of F1-score is
+      given as:- F1 Score = 2*(Recall * Precision) / (Recall + Precision)
+  utter_roc:
+  - text: ROC curves in logistic regression are used for determining the best cutoff
+      value for predicting whether a new observation is a 'failure' (0) or a 'success'
+      (1). The Area Under the ROC curve (AUC) is an aggregated metric that evaluates
+      how well a logistic regression model classifies positive and negative outcomes
+      at all possible cutoffs. It can range from 0.5 to 1, and the larger it is the
+      better. People will sometimes use the AUC as a means for evaluating predictive
+      performance of a model, although because it represents all possible cutoff values,
+      which isn’t feasible in practice, the interpretation is difficult. We recommend
+      interpreting the ROC curve directly as a way to choose a cutoff value. For more
+      information, visit the [link](https://www.graphpad.com/guides/prism/8/curve-fitting/reg_logistic_roc_curves.htm)
+  utter_lassor:
+  - text: 'Lasso Regression is a popular type of regularized linear regression that
+      includes an L1 penalty. This has the effect of shrinking the coefficients for
+      those input variables that do not contribute much to the prediction task. This
+      penalty allows some coefficient values to go to the value of zero, allowing
+      input variables to be effectively removed from the model, providing a type of
+      automatic feature selection. The mathematical equation of Lasso is given as:
+      Residual Sum of Squares + λ * (Sum of the absolute value of the magnitude of
+      coefficients) n                     p ∑ (yi - ∑ xijβj)2 + λ ∑ |βj| i=1     j            j=1
+      where, λ denotes the amount of shrinkage, λ = 0 implies all features are considered
+      and it is equivalent to the linear regression where only the residual sum of
+      squares is considered to build a predictive model, λ = ∞ implies no feature
+      is considered i.e, as λ closes to infinity it eliminates more and more features,
+      The bias increases with increase in λ, variance increases with decrease in λ
+      For more information, you may visit the [link](https://towardsdatascience.com/ridge-and-lasso-regression-a-complete-guide-with-python-scikit-learn-e20e34bcbf0b)'
+  utter_ridger:
+  - text: "Ridge regression belongs a class of regression tools that use L2 regularization.\
+      \ The other type of regularization, L1 regularization, limits the size of the\
+      \ coefficients by adding an L1 penalty equal to the absolute value of the magnitude\
+      \ of coefficients. This sometimes results in the elimination of some coefficients\
+      \ altogether, which can yield sparse models. L2 regularization adds an L2 penalty,\
+      \ which equals the square of the magnitude of coefficients. All coefficients\
+      \ are shrunk by the same factor (so none are eliminated). Unlike L1 regularization,\
+      \ L2 will not result in sparse models. A tuning parameter (λ) controls the strength\
+      \ of the penalty term. When λ = 0, ridge regression equals least squares regression.\
+      \ If λ = ∞, all coefficients are shrunk to zero. The ideal penalty is therefore\
+      \ somewhere in between 0 and ∞. The mathematical equation is given as: n   \
+      \                       p ∑ (yi – β0 - ∑ xijβj)2 + λ ∑ βj2 i=1          j  \
+      \          j=1\nFor more information, you may visit the below [link](https://towardsdatascience.com/ridge-and-lasso-regression-a-complete-guide-with-python-scikit-learn-e20e34bcbf0b)"
+  utter_classification:
+  - text: 'Classification is a process of categorizing a given set of data into classes,
+      It can be performed on both structured or unstructured data. The process starts
+      with predicting the class of given data points. The classes are often referred
+      to as target, label or categories. The classification predictive modeling is
+      the task of approximating the mapping function from input variables to discrete
+      output variables. The main goal is to identify which class/category the new
+      data will fall into. Important terms in classification include:- Classifier
+      – It is an algorithm that is used to map the input data to a specific category,
+      Classification Model – The model predicts or draws a conclusion to the input
+      data given for training, it will predict the class or category for the data,
+      Feature – A feature is an individual measurable property of the phenomenon being
+      observed. '
+  utter_q6:
+  - buttons:
+    - payload: /logistic_class
+      title: Logistic
+    - payload: /svm
+      title: SVM
+    - payload: knn
+      title: KNN
+    - payload: /decision
+      title: Decision Trees
+    - payload: random_forest
+      title: Random Forest
+    - payload: /naivebayes
+      title: Naive Bayes Classifier
+    text: 'Do you want to know about the Classification techniques? I can help you
+      with:'
+  utter_logisticClass:
+  - text: It is a classification algorithm in machine learning that uses one or more
+      independent variables to determine an outcome. The outcome is measured with
+      a dichotomous variable meaning it will have only two possible outcomes. The
+      goal of logistic regression is to find a best-fitting relationship between the
+      dependent variable and a set of independent variables. It is better than other
+      binary classification algorithms like nearest neighbor since it quantitatively
+      explains the factors leading to classification. Logistic regression is specifically
+      meant for classification, it is useful in understanding how a set of independent
+      variables affect the outcome of the dependent variable. The main disadvantage
+      of the logistic regression algorithm is that it only works when the predicted
+      variable is binary, it assumes that the data is free of missing values and assumes
+      that the predictors are independent of each other. For more information, visit
+      the [link](https://www.edureka.co/blog/classification-in-machine-learning/)
+  utter_decision:
+  - text: The decision tree algorithm builds the classification model in the form
+      of a tree structure. It utilizes the if-then rules which are equally exhaustive
+      and mutually exclusive in classification. The process goes on with breaking
+      down the data into smaller structures and eventually associating it with an
+      incremental decision tree. The final structure looks like a tree with nodes
+      and leaves. The rules are learned sequentially using the training data one at
+      a time. Each time a rule is learned, the tuples covering the rules are removed.
+      The process continues on the training set until the termination point is met.
+      The tree is constructed in a top-down recursive divide and conquer approach.
+      A decision node will have two or more branches and a leaf represents a classification
+      or decision. The topmost node in the decision tree that corresponds to the best
+      predictor is called the root node, and the best thing about a decision tree
+      is that it can handle both categorical and numerical data. A decision tree gives
+      an advantage of simplicity to understand and visualize, it requires very little
+      data preparation as well. The disadvantage that follows with the decision tree
+      is that it can create complex trees that may bot categorize efficiently. They
+      can be quite unstable because even a simplistic change in the data can hinder
+      the whole structure of the decision tree. For more information, visit the [link](https://www.edureka.co/blog/classification-in-machine-learning/)
+  utter_randomforest:
+  - text: Random decision trees or random forest are an ensemble learning method for
+      classification, regression, etc. It operates by constructing a multitude of
+      decision trees at training time and outputs the class that is the mode of the
+      classes or classification or mean prediction(regression) of the individual trees.
+      A random forest is a meta-estimator that fits a number of trees on various subsamples
+      of data sets and then uses an average to improve the accuracy in the model’s
+      predictive nature. The sub-sample size is always the same as that of the original
+      input size but the samples are often drawn with replacements. The advantage
+      of the random forest is that it is more accurate than the decision trees due
+      to the reduction in the over-fitting. The only disadvantage with the random
+      forest classifiers is that it is quite complex in implementation and gets pretty
+      slow in real-time prediction. For more information, visit the [link](https://www.edureka.co/blog/classification-in-machine-learning/)
+  utter_svm:
+  - text: The support vector machine is a classifier that represents the training
+      data as points in space separated into categories by a gap as wide as possible.
+      New points are then added to space by predicting which category they fall into
+      and which space they will belong to. It uses a subset of training points in
+      the decision function which makes it memory efficient and is highly effective
+      in high dimensional spaces. The only disadvantage with the support vector machine
+      is that the algorithm does not directly provide probability estimates. For more
+      information, visit the [link](https://www.edureka.co/blog/classification-in-machine-learning/)
+  utter_knn:
+  - text: It is a lazy learning algorithm that stores all instances corresponding
+      to training data in n-dimensional space. It is a lazy learning algorithm as
+      it does not focus on constructing a general internal model, instead, it works
+      on storing instances of training data. Classification is computed from a simple
+      majority vote of the k nearest neighbors of each point. It is supervised and
+      takes a bunch of labeled points and uses them to label other points. To label
+      a new point, it looks at the labeled points closest to that new point also known
+      as its nearest neighbors. It has those neighbors vote, so whichever label the
+      most of the neighbors have is the label for the new point. The “k” is the number
+      of neighbors it checks. This algorithm is quite simple in its implementation
+      and is robust to noisy training data. Even if the training data is large, it
+      is quite efficient. The only disadvantage with the KNN algorithm is that there
+      is no need to determine the value of K and computation cost is pretty high compared
+      to other algorithms. For more information, visit the [link](https://www.edureka.co/blog/classification-in-machine-learning/)
+  utter_naivebayes:
+  - text: It is a classification algorithm based on Bayes’s theorem which gives an
+      assumption of independence among predictors. In simple terms, a Naive Bayes
+      classifier assumes that the presence of a particular feature in a class is unrelated
+      to the presence of any other feature. Even if the features depend on each other,
+      all of these properties contribute to the probability independently. Naive Bayes
+      model is easy to make and is particularly useful for comparatively large data
+      sets. Even with a simplistic approach, Naive Bayes is known to outperform most
+      of the classification methods in machine learning. Following is the Bayes theorem
+      to implement the Naive Bayes Theorem:- P(Ci|x1, x2,....,xn) = P(x1, x2,....,xn|Ci).P(Ci)/P(x1,
+      x2,....,xn) where 1<i<k. The Naive Bayes classifier requires a small amount
+      of training data to estimate the necessary parameters to get the results. They
+      are extremely fast in nature compared to other classifiers. The only disadvantage
+      is that they are known to be a bad estimator. For more information, visit the
+      [link](https://www.edureka.co/blog/classification-in-machine-learning/)
+  utter_unsupervised:
+  - text: 'Unsupervised learning is the training of machine using information that
+      is neither classified nor labeled and allowing the algorithm to act on that
+      information without guidance. Here the task of machine is to group unsorted
+      information according to similarities, patterns and differences without any
+      prior training of data. Unlike supervised learning, no teacher is provided that
+      means no training will be given to the machine. Therefore machine is restricted
+      to find the hidden structure in unlabeled data by our-self. Unsupervised learning
+      classified into two categories of algorithms: Clustering: A clustering problem
+      is where you want to discover the inherent groupings in the data, such as grouping
+      customers by purchasing behavior, Association: An association rule learning
+      problem is where you want to discover rules that describe large portions of
+      your data, such as people that buy X also tend to buy Y. For more information,
+      visit the [link](https://towardsdatascience.com/unsupervised-learning-and-data-clustering-eeecb78b422a)'
+  utter_q7:
+  - buttons:
+    - payload: /cluster
+      title: Clustering
+    - payload: ass_rules
+      title: Association Rules
+    text: Do you want to know more about Unsupervised learning?
+  utter_cluster:
+  - text: “Clustering” is the process of grouping similar entities together. Grouping
+      similar entities together help profile the attributes of different groups. In
+      other words, this will give us insight into underlying patterns of different
+      groups. There are many applications of grouping unlabeled data, for example,
+      you can identify different groups/segments of customers and market each group
+      in a different way to maximize the revenue. Another example is grouping documents
+      together which belong to the similar topics etc. Clustering is also used to
+      reduces the dimensionality of the data when you are dealing with a copious number
+      of variables.
+  utter_q8:
+  - buttons:
+    - payload: /Em
+      title: EM
+    - payload: /kmeans
+      title: K-Means
+    - payload: /hierarchical
+      title: Hierarchical
+    - payload: /birch
+      title: BIRCH
+    - payload: /dbscan
+      title: DBScan
+    text: Do you want to know more about Clustering Techniques?
+  utter_kmeans:
+  - text: K-means clustering is the most commonly used clustering algorithm. It's
+      a centroid-based algorithm and the simplest unsupervised learning algorithm.
+      This algorithm tries to minimize the variance of data points within a cluster.
+      It's also how most people are introduced to unsupervised machine learning. K-means
+      is best used on smaller data sets because it iterates over all of the data points.
+      That means it'll take more time to classify data points if there are a large
+      amount of them in the data set. Since this is how k-means clusters data points,
+      it doesn't scale well. For more information, visit the [link](https://www.freecodecamp.org/news/8-clustering-algorithms-in-machine-learning-that-all-data-scientists-should-know/)
+  utter_dbscan:
+  - text: "DBSCAN stands for density-based spatial clustering of applications with\
+      \ noise. It's a density-based clustering algorithm, unlike k-means. This is\
+      \ a good algorithm for finding outliners in a data set. It finds arbitrarily\
+      \ shaped clusters based on the density of data points in different regions.\
+      \ It separates regions by areas of low-density so that it can detect outliers\
+      \ between the high-density clusters. This algorithm is better than k-means when\
+      \ it comes to working with oddly shaped data. DBSCAN uses two parameters to\
+      \ determine how clusters are defined: minPts (the minimum number of data points\
+      \ that need to be clustered together for an area to be considered high-density)\
+      \ and eps (the distance used to determine if a data point is in the same area\
+      \ as other data points). Choosing the right initial parameters is critical for\
+      \ this algorithm to work. For more information, visit the [link](https://www.freecodecamp.org/news/8-clustering-algorithms-in-machine-learning-that-all-data-scientists-should-know/)"
+  utter_birch:
+  - text: The Balance Iterative Reducing and Clustering using Hierarchies (BIRCH)
+      algorithm works better on large data sets than the k-means algorithm. It breaks
+      the data into little summaries that are clustered instead of the original data
+      points. The summaries hold as much distribution information about the data points
+      as possible. This algorithm is commonly used with other clustering algorithm
+      because the other clustering techniques can be used on the summaries generated
+      by BIRCH. The main downside of the BIRCH algorithm is that it only works on
+      numeric data values. You can't use this for categorical values unless you do
+      some data transformations. For more information, visit the [link](https://www.freecodecamp.org/news/8-clustering-algorithms-in-machine-learning-that-all-data-scientists-should-know/)
+  utter_em:
+  - text: 'One of the major drawbacks of K-Means is its naive use of the mean value
+      for the cluster center. K-Means also fails in cases where the clusters are not
+      circular, again as a result of using the mean as cluster center. Gaussian Mixture
+      Models (GMMs) give us more flexibility than K-Means. With GMMs we assume that
+      the data points are Gaussian distributed; this is a less restrictive assumption
+      than saying they are circular by using the mean. That way, we have two parameters
+      to describe the shape of the clusters: the mean and the standard deviation!
+      Taking an example in two dimensions, this means that the clusters can take any
+      kind of elliptical shape (since we have standard deviation in both the x and
+      y directions). Thus, each Gaussian distribution is assigned to a single cluster.
+      n order to find the parameters of the Gaussian for each cluster (e.g the mean
+      and standard deviation) we will use an optimization algorithm called Expectation–Maximization
+      (EM). For more information, visit the [link](https://www.kdnuggets.com/2018/06/5-clustering-algorithms-data-scientists-need-know.html)'
+  utter_hierarchical:
+  - text: 'Hierarchical clustering algorithms actually fall into 2 categories: top-down
+      or bottom-up. Bottom-up algorithms treat each data point as a single cluster
+      at the outset and then successively merge (or agglomerate) pairs of clusters
+      until all clusters have been merged into a single cluster that contains all
+      data points. Bottom-up hierarchical clustering is therefore called hierarchical
+      agglomerative clustering or HAC. This hierarchy of clusters is represented as
+      a tree (or dendrogram). The root of the tree is the unique cluster that gathers
+      all the samples, the leaves being the clusters with only one sample. Hierarchical
+      clustering does not require us to specify the number of clusters and we can
+      even select which number of clusters looks best since we are building a tree.
+      Additionally, the algorithm is not sensitive to the choice of distance metric;
+      all of them tend to work equally well whereas with other clustering algorithms,
+      the choice of distance metric is critical. A particularly good use case of hierarchical
+      clustering methods is when the underlying data has a hierarchical structure
+      and you want to recover the hierarchy; other clustering algorithms can’t do
+      this. These advantages of hierarchical clustering come at the cost of lower
+      efficiency, as it has a time complexity of O(n³), unlike the linear complexity
+      of K-Means and GMM. For more information, visit the [link](https://www.kdnuggets.com/2018/06/5-clustering-algorithms-data-scientists-need-know.html)'
+  utter_association:
+  - text: 'Association rule learning is a type of unsupervised learning technique
+      that checks for the dependency of one data item on another data item and maps
+      accordingly so that it can be more profitable. It tries to find some interesting
+      relations or associations among the variables of dataset. It is based on different
+      rules to discover the interesting relations between variables in the database.
+      For example, if a customer buys bread, he most likely can also buy butter, eggs,
+      or milk, so these products are stored within a shelf or mostly nearby. Association
+      rule learning works on the concept of If and Else Statement, such as if A then
+      B. Here the If element is called antecedent, and then statement is called as
+      Consequent. These types of relationships where we can find out some association
+      or relation between two items is known as single cardinality. It is all about
+      creating rules, and if the number of items increases, then cardinality also
+      increases accordingly. So, to measure the associations between thousands of
+      data items, there are several metrics. These metrics are: Support, Confidence
+      and Lift. For more information, visit the [link](https://www.javatpoint.com/association-rule-learning)'
+  utter_reinforcement:
+  - text: 'Reinforcement learning is an area of Machine Learning. It is about taking
+      suitable action to maximize reward in a particular situation. It is employed
+      by various software and machines to find the best possible behavior or path
+      it should take in a specific situation. Reinforcement learning differs from
+      the supervised learning in a way that in supervised learning the training data
+      has the answer key with it so the model is trained with the correct answer itself
+      whereas in reinforcement learning, there is no answer but the reinforcement
+      agent decides what to do to perform the given task. In the absence of a training
+      dataset, it is bound to learn from its experience. There are two types of Reinforcement:
+      Positive – defined as when an event, occurs due to a particular behavior, increases
+      the strength and the frequency of the behavior, Negative – defined as strengthening
+      of a behavior because a negative condition is stopped or avoided. For more information,
+      visit the [link](https://www.geeksforgeeks.org/what-is-reinforcement-learning/)'
+  utter_q9:
+  - buttons:
+    - payload: /qlearning
+      title: Q-Learning
+    - payload: sarsa
+      title: SARSA
+    text: Do you want to know about Reinforcement learning algorithms?
+  utter_qlearn:
+  - text: Q-learning is an Off policy RL algorithm, which is used for the temporal
+      difference Learning. The temporal difference learning methods are the way of
+      comparing temporally successive predictions. It learns the value function Q
+      (S, a), which means how good to take action 'a' at a particular state 's'. The
+      main objective of Q-learning is to learn the policy which can inform the agent
+      that what actions should be taken for maximizing the reward under what circumstances.
+      For more information, visit the [link](https://www.javatpoint.com/reinforcement-learning)
+  utter_sarsa:
+  - text: "SARSA stands for State Action Reward State action, which is an on-policy\
+      \ temporal difference learning method. The on-policy control method selects\
+      \ the action for each state while learning using a specific policy. The goal\
+      \ of SARSA is to calculate the Q π (s, a) for the selected current policy π\
+      \ and all pairs of (s-a). The main difference between Q-learning and SARSA algorithms\
+      \ is that unlike Q-learning, the maximum reward for the next state is not required\
+      \ for updating the Q-value in the table. In SARSA, new action and reward are\
+      \ selected using the same policy, which has determined the original action.\
+      \ The SARSA is named because it uses the quintuple Q(s, a, r, s', a'). Where,\
+      \ s: original state, a: Original action, r: reward observed while following\
+      \ the states, s' and a': New state, action pair."
+  utter_maths:
+  - buttons:
+    - payload: /probability
+      title: Probability
+    - payload: /stats
+      title: Statistics
+    - payload: /bayes
+      title: Bayes Theorem
+    text: 'What topic would you like to discuss in Mathematics? I can help you with:'
+  utter_prob:
+  - text: 'Probability starts with a sample space that describes possible outcomes
+      in an experiment. Probability consists of sample space which contain all the
+      elements and from these elements we select the outcome required for the experiment
+      to get the probability. The important terms in Probability include:- Sample
+      Spaces are sets. If S is a sample space and A C S (A is subset of S), we can
+      call A an event, it is basically the condition on which the experiment calculate
+      the probability for that particular event. If A and B are events : A U B : It
+      is Union where it contains all the elements present in A or B [P(A U B) = P(A)
+      + P(B)], A ∩ B : It is intersection where it contains all the elements that
+      are common among A and B [A ∩ B = {x belongs to S : x belongs to A and x belongs
+      to B}], A / B : It is difference where it contains all the elements are present
+      in A but not in B [A / B = {x belongs to S : x belongs to A and x does not belongs
+      to B}] and Aс = { x belongs to S : x does not belong to A}'
+  utter_stats:
+  - text: 'Mean: The mean of a discrete random variable X is a weighted average of
+      the possible values that the random variable can take. Unlike the sample mean
+      of a group of observations, which gives each observation equal weight, the mean
+      of a random variable weights each outcome xi according to its probability, pi.
+      The common symbol for the mean (also known as the expected value of X) is µ,
+      formally defined by µx = x1p1 + x2p2 +……+ xkpk = ∑xipi The mean of a random
+      variable provides the long-run average of the variable, or the expected average
+      outcome over many observations. Variance: The variance of a discrete random
+      variable X measures the spread, or variability, of the distribution, and is
+      defined by σx^2 = ∑(xi - µx)^2pi. The standard deviation σ is the square root
+      of the variance.'
+  utter_bayes:
+  - text: 'The Bayes theorem describes the probability of an event based on the prior
+      knowledge of the conditions that might be related to the event. The theorem
+      is given as: P(A|B) = P(A) P(B|A)/P(B) which tells us: how often A happens given
+      that B happens, written P(A|B), When we know: how often B happens given that
+      A happens, written P(B|A) and how likely A is on its own, written P(A) and how
+      likely B is on its own, written P(B). Visit the link below for more [information](https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/)'
+  utter_datavisual:
+  - text: 'Data visualization is used in many areas to model complex events and visualize
+      phenomena that cannot be observed directly, such as weather patterns, medical
+      conditions or mathematical relationships. Data visualization is applied in practically
+      every field of knowledge. Scientists in various disciplines use computer techniques
+      to model complex events and visualize phenomena that cannot be observed directly,
+      such as weather patterns, medical conditions or mathematical relationships.
+      Data visualization provides an important suite of tools and techniques for gaining
+      a qualitative understanding. The basic techniques are the following plots: Line
+      plot, bar chart, pie chart, histograms, scatter plot, Kernel Density Estimation
+      for Non-Parametric Data, Box and Whisker Plot for Large Data, Word Clouds and
+      Network Diagrams for Unstructured Data and Correlation Matrices. For more information,
+      visit the [link](https://www.kdnuggets.com/2019/04/best-data-visualization-techniques.html)'
+  utter_req:
+  - text: If you want to continue to explore other topics, please type 'hi' and continue
+      exploration
+
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_name:
+  - text: Sure we have an opportunity in Sabudh.
+
+  utter_ask_name:
+  - text: What is your name?
+
+  utter_ask_number:
+  - text: What is your mobile number?
+
+  utter_thanks:
+    - text: Thanks for providing the values.
+
+  utter_details_thanks:
+    - text: "Thanks for providing the given details. We will contact you soon \nName: {Name},\nMobile Number: {Mobile_number}"
+
+  utter_out_of_scope:
+    - text: Sorry, I didn't get what you said. Please rephrase what you said.
+
+actions:
+  - action_submit
+  - action_video
+forms:
+  user_details_form:
+    name:
+      - type: from_entity
+        entity: name
+    number:
+      - type: from_entity
+        entity: number
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

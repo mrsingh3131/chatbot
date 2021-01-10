@@ -1,0 +1,340 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - afternoon
+    - goodafternoon
+    - noon
+    - hlo
+    - hullo
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - right
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+- intent: data_science
+  examples: |
+    - Data Science
+    - Datascience
+    - data science
+    - datascience
+- intent: data_analysis
+  examples: |
+    - data analysis
+    - dataanalysis
+    - datanalysis
+    - Data Analysis
+    - DataAnalysis
+- intent: pca
+  examples: |
+    - pca
+    - principal component analysis
+    - principal analysis
+    - principle component analysis
+    - principle analysis
+- intent: eda
+  examples: |
+    - eda
+    - exploratory
+    - exploratory data analysis
+    - exploratory analysis
+- intent: spatial
+  examples: |
+    - spatial data analysis
+    - spatial analysis
+    - spatialanalysis
+    - spatialdata
+- intent: machine_learning
+  examples: |
+    - machinelearning
+    - ml
+    - machine learning
+    - Machine Learning
+    - Machinelearning
+    - Ml
+    - ML
+    - /machine_learning
+- intent: Supervised
+  examples: |
+    - supervised learning
+    - Supervised
+    - learning with teacher
+    - Learning with labelled data
+    - supervisedlearning
+- intent: regression
+  examples: |
+    - reg
+    - regression
+- intent: linear_reg
+  examples: |
+    - linear regression
+    - linear
+    - linear_regression
+    - linearregression
+- intent: mae
+  examples: |
+    - mae
+    - mean absolute error
+    - meanabsoluteerror
+- intent: rmse
+  examples: |
+    - root mean square error
+    - rmse
+- intent: r2
+  examples: |
+    - r2
+    - R-squared
+    - r-squred
+    - R squared
+    - r squared
+- intent: logistic_reg
+  examples: |
+    - logistic regression
+    - logistic
+    - logisticregression
+    - logistic_regression
+- intent: confusion_matrix
+  examples: |
+    - confusion matrix
+    - confusion_matrix
+- intent: ROC
+  examples: |
+    - ROC
+    - roc curve
+    - roc
+- intent: F1_score
+  examples: |
+    - f1 score
+    - f1 measure
+    - f1
+- intent: cross_val
+  examples: |
+    - cross validation
+    - cross_validation
+    - Cross Validation
+- intent: ridge_reg
+  examples: |
+    - ridge regression
+    - ridge_regression
+    - ridge
+    - ridgeregression
+- intent: lasso_reg
+  examples: |
+    - lasso regression
+    - lasso
+    - lassoregression
+    - lasso_regression
+- intent: classification
+  examples: |
+    - classification
+    - clasification
+- intent: logistic_class
+  examples: |
+    - logistic classification
+    - logistic
+    - logistic_classification
+- intent: svm
+  examples: |
+    - support vector machine
+    - support vector
+    - svm
+    - support machine
+    - SVM
+- intent: knn
+  examples: |
+    - knn
+    - k nearest neighbours
+    - nearest neighbours
+    - k neighbours
+    - KNN
+- intent: decision
+  examples: |
+    - decision trees
+    - decision_tree
+    - decisiontree
+    - Decision Tree
+- intent: random_forest
+  examples: |
+    - random forest
+    - random forest classification
+    - random classification
+- intent: naivebayes
+  examples: |
+    - naive bayes algorithm
+    - naive bayes classifier
+    - naive bayes
+- intent: unsupervised
+  examples: |
+    - unsupervised learning
+    - unsupervised
+    - learning without teacher
+    - learning without labelled data
+    - unsupervisedlearning
+- intent: cluster
+  examples: |
+    - clustering
+    - cluster
+- intent: Em
+  examples: |
+    - expectation maximization
+    - EM
+- intent: kmeans
+  examples: |
+    - kmeans
+    - k-means
+- intent: hierarchical
+  examples: |
+    - hierarchical
+    - hierarchical clustering
+- intent: birch
+  examples: |
+    - BIRCH
+    - Balanced Iterative Reducing and Clustering
+    - birch
+- intent: dbscan
+  examples: |
+    - dbscan
+    - Density-based spatial clustering of applications with noise
+    - DBSCAN
+    - DBscan
+- intent: ass_rules
+  examples: |
+    - association rules
+    - associationrules
+    - association_rules
+- intent: reinforcement
+  examples: |
+    - reinforcement learning
+    - rl
+    - reinforcement
+    - reinforcementlearning
+    - learning from experience
+- intent: qlearning
+  examples: |
+    - Q-learning
+    - Quality learning
+- intent: sarsa
+  examples: |
+    - SARSA
+    - State Action Reward State action
+    - sarsa
+- intent: maths
+  examples: |
+    - mathematical requirements
+    - maths
+    - mathematics
+    - maths for machine learning
+- intent: probability
+  examples: |
+    - prob
+    - probability
+    - Probability
+    - Prob
+- intent: stats
+  examples: |
+    - statistics
+    - stats
+    - Statistics
+    - Stats
+- intent: bayes
+  examples: |
+    - Bayes theorem
+    - Bayes
+    - bayes theorem
+- intent: data_visualization
+  examples: |
+    - data visualization
+    - datavisualization
+    - datavisualisation
+    - graphs
+    - graph
+    - graphical representation in data science
+    - representation in data science
+    - representation in datascience
+
+- intent: tell_name
+  examples: |
+    - i want an internship.
+    - internship
+    - do you provide an internship
+    - can i be an intern
+    - i want to be an intern
+    - intern
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: my_name
+  examples: |
+    - my name is [jaskaran]{"entity":"name","value":"jaskaran"}
+    - my name is [kamya]{"entity":"name","value":"kamya"}
+    - my name is [puneet]{"entity":"name","value":"puneet"}
+    - [amanjot]{"entity":"name","value":"amanjot"} is my name
+    - [priyanka]{"entity":"name","value":"priyanka"} this side
+    - people call me [ashish]{"entity":"name","value":"ashish"}
+
+- intent: mobile_number
+  examples: |
+    - my number is [8209829808]{"entity":"number"}
+    - [8209829808]{"entity":"number"}
+    - [8209829808]{"entity":"number"} is my number
+    - my mobile number is [8209829808]{"entity":"number"}
+
+- intent: play_video
+  examples: |
+    - show website
+    - open the url
+    - open the link in browser
+    - show me the website that i asked for
+    - does sabudh have website?
+    - sabudh website
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?

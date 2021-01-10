@@ -1,0 +1,1257 @@
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: data science 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_science
+  - action: utter_data_science
+  - intent: deny
+  - action: utter_goodbye
+
+- story: data science 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+  - intent: deny
+  - action: utter_goodbye
+
+- story: data analysis 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+  - intent: eda
+  - action: utter_eda
+  - action: utter_q1
+  - intent: deny
+  - action: utter_goodbye
+
+- story: data analysis 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+  - intent: pca
+  - action: utter_pca
+  - action: utter_q1
+  - intent: deny
+  - action: utter_goodbye
+
+- story: data analysis 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+  - intent: spatial
+  - action: utter_spatial
+  - action: utter_q1
+  - intent: deny
+  - action: utter_goodbye
+
+- story: data analysis 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+  - intent: eda
+  - action: utter_eda
+  - action: utter_q1
+  - intent: pca
+  - action: utter_pca
+  - action: utter_q1
+  - intent: spatial
+  - action: utter_spatial
+  - action: utter_goodbye
+
+- story: data analysis 5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+  - intent: eda
+  - action: utter_eda
+  - action: utter_q1
+  - intent: pca
+  - action: utter_pca
+  - action: utter_q1
+  - intent: deny
+  - action: utter_goodbye
+
+- story: data analysis 6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+  - intent: eda
+  - action: utter_eda
+  - action: utter_q1
+  - intent: spatial
+  - action: utter_spatial
+  - action: utter_q1
+  - intent: deny
+  - action: utter_goodbye
+
+- story: data analysis 7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+  - intent: pca
+  - action: utter_pca
+  - action: utter_q1
+  - intent: spatial
+  - action: utter_spatial
+  - action: utter_q1
+  - intent: deny
+  - action: utter_goodbye
+
+- story: data analysis 8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+  - intent: pca
+  - action: utter_pca
+  - action: utter_q1
+  - intent: eda
+  - action: utter_eda
+  - action: utter_q1
+  - intent: deny
+  - action: utter_goodbye
+
+- story: data analysis 9
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+  - intent: spatial
+  - action: utter_spatial
+  - action: utter_q1
+  - intent: eda
+  - action: utter_eda
+  - action: utter_q1
+  - intent: deny
+  - action: utter_goodbye
+
+- story: data analysis 9
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+  - intent: spatial
+  - action: utter_spatial
+  - action: utter_q1
+  - intent: pca
+  - action: utter_pca
+  - action: utter_q1
+  - intent: deny
+  - action: utter_goodbye
+
+- story: data science 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: deny
+  - action: utter_goodbye
+
+- story: machine learning 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: deny
+  - action: utter_q2
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: deny
+  - action: utter_q2
+  - intent: classification
+  - action: utter_classification
+  - action: utter_q6
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: linear_reg
+  - action: utter_linear
+  - action: utter_q4
+  - intent: deny
+  - action: utter_q3
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: logistic_reg
+  - action: utter_logr
+  - action: utter_q5
+  - intent: deny
+  - action: utter_q3
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: lasso_reg
+  - action: utter_lassor
+  - action: utter_q3
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: ridge_reg
+  - action: utter_ridger
+  - action: utter_q3
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: linear_reg
+  - action: utter_linear
+  - action: utter_q4
+  - intent: mae
+  - action: utter_mae
+  - action: utter_q4
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: linear_reg
+  - action: utter_linear
+  - action: utter_q4
+  - intent: rmse
+  - action: utter_rmse
+  - action: utter_q4
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: linear_reg
+  - action: utter_linear
+  - action: utter_q4
+  - intent: r2
+  - action: utter_r2
+  - action: utter_q4
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 9
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: linear_reg
+  - action: utter_linear
+  - action: utter_q4
+  - intent: mae
+  - action: utter_mae
+  - intent: rmse
+  - action: utter_rmse
+  - action: utter_q4
+  - intent: r2
+  - action: utter_r2
+  - action: utter_goodbye
+
+- story: supervised 10
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: logistic_reg
+  - action: utter_logr
+  - action: utter_q5
+  - intent: confusion_matrix
+  - action: utter_confusionMatrix
+  - intent: ROC
+  - action: utter_roc
+  - action: utter_q5
+  - intent: F1_score
+  - action: utter_f1score
+  - action: utter_q5
+  - intent: cross_val
+  - action: utter_Crossval
+  - action: utter_goodbye
+
+- story: supervised 11
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: logistic_reg
+  - action: utter_logr
+  - action: utter_q5
+  - intent: cross_val
+  - action: utter_Crossval
+  - action: utter_q5
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 12
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: logistic_reg
+  - action: utter_logr
+  - action: utter_q5
+  - intent: F1_score
+  - action: utter_f1score
+  - action: utter_q5
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 13
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: logistic_reg
+  - action: utter_logr
+  - action: utter_q5
+  - intent: ROC
+  - action: utter_roc
+  - action: utter_q5
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 14
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: regression
+  - action: utter_reg
+  - action: utter_q3
+  - intent: logistic_reg
+  - action: utter_logr
+  - action: utter_q5
+  - intent: confusion_matrix
+  - action: utter_confusionMatrix
+  - action: utter_q5
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 15
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: classification
+  - action: utter_classification
+  - action: utter_q6
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 16
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: classification
+  - action: utter_classification
+  - action: utter_q6
+  - intent: logistic_class
+  - action: utter_logisticClass
+  - action: utter_q6
+  - intent: svm
+  - action: utter_svm
+  - action: utter_q6
+  - intent: knn
+  - action: utter_knn
+  - action: utter_q6
+  - intent: decision
+  - action: utter_decision
+  - action: utter_q6
+  - intent: random_forest
+  - action: utter_randomforest
+  - action: utter_q6
+  - intent: naivebayes
+  - action: utter_naivebayes
+  - action: utter_goodbye
+
+- story: supervised 17
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: classification
+  - action: utter_classification
+  - action: utter_q6
+  - intent: logistic_class
+  - action: utter_logisticClass
+  - action: utter_q6
+  - intent: svm
+  - action: utter_svm
+  - action: utter_q6
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 18
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: classification
+  - action: utter_classification
+  - action: utter_q6
+  - intent: logistic_class
+  - action: utter_logisticClass
+  - action: utter_q6
+  - intent: knn
+  - action: utter_knn
+  - action: utter_q6
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 19
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: classification
+  - action: utter_classification
+  - action: utter_q6
+  - intent: logistic_class
+  - action: utter_logisticClass
+  - action: utter_q6
+  - intent: decision
+  - action: utter_decision
+  - action: utter_q6
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 20
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: classification
+  - action: utter_classification
+  - action: utter_q6
+  - intent: logistic_class
+  - action: utter_logisticClass
+  - action: utter_q6
+  - intent: random_forest
+  - action: utter_randomforest
+  - action: utter_q6
+  - intent: deny
+  - action: utter_goodbye
+
+- story: supervised 21
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: Supervised
+  - action: utter_supervised
+  - action: utter_q2
+  - intent: classification
+  - action: utter_classification
+  - action: utter_q6
+  - intent: logistic_class
+  - action: utter_logisticClass
+  - action: utter_q6
+  - intent: naivebayes
+  - action: utter_naivebayes
+  - action: utter_q6
+  - intent: deny
+  - action: utter_goodbye
+
+- story: machine learning 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: unsupervised
+  - action: utter_unsupervised
+  - action: utter_q7
+  - intent: deny
+  - action: utter_goodbye
+
+- story: unsupervised
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: unsupervised
+  - action: utter_unsupervised
+  - action: utter_q7
+  - intent: ass_rules
+  - action: utter_association
+  - action: utter_q7
+  - intent: deny
+  - action: utter_goodbye
+
+- story: unsupervised 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: unsupervised
+  - action: utter_unsupervised
+  - action: utter_q7
+  - intent: ass_rules
+  - action: utter_association
+  - action: utter_q7
+  - intent: cluster
+  - action: utter_cluster
+  - action: utter_q8
+  - intent: deny
+  - action: utter_goodbye
+
+- story: unsupervised 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: unsupervised
+  - action: utter_unsupervised
+  - action: utter_q7
+  - intent: ass_rules
+  - action: utter_association
+  - action: utter_q7
+  - intent: cluster
+  - action: utter_cluster
+  - action: utter_q8
+  - intent: Em
+  - action: utter_em
+  - action: utter_q8
+  - intent: kmeans
+  - action: utter_kmeans
+  - action: utter_q8
+  - intent: hierarchical
+  - action: utter_hierarchical
+  - action: utter_q8
+  - intent: birch
+  - action: utter_birch
+  - action: utter_q8
+  - intent: dbscan
+  - action: utter_dbscan
+  - action: utter_goodbye
+
+- story: unsupervised 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: unsupervised
+  - action: utter_unsupervised
+  - action: utter_q7
+  - intent: cluster
+  - action: utter_cluster
+  - action: utter_q8
+  - intent: Em
+  - action: utter_em
+  - action: utter_q8
+  - intent: kmeans
+  - action: utter_kmeans
+  - action: utter_q8
+  - intent: hierarchical
+  - action: utter_hierarchical
+  - action: utter_q8
+  - intent: birch
+  - action: utter_birch
+  - action: utter_q8
+  - intent: dbscan
+  - action: utter_dbscan
+  - action: utter_goodbye
+
+- story: unsupervised 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: unsupervised
+  - action: utter_unsupervised
+  - action: utter_q7
+  - intent: cluster
+  - action: utter_cluster
+  - action: utter_q8
+  - intent: Em
+  - action: utter_em
+  - action: utter_q8
+  - intent: deny
+  - action: utter_goodbye
+
+- story: unsupervised 5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: unsupervised
+  - action: utter_unsupervised
+  - action: utter_q7
+  - intent: cluster
+  - action: utter_cluster
+  - action: utter_q8
+  - intent: kmeans
+  - action: utter_kmeans
+  - action: utter_q8
+  - intent: deny
+  - action: utter_goodbye
+
+- story: unsupervised 6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: unsupervised
+  - action: utter_unsupervised
+  - action: utter_q7
+  - intent: cluster
+  - action: utter_cluster
+  - action: utter_q8
+  - intent: dbscan
+  - action: utter_dbscan
+  - action: utter_q8
+  - intent: deny
+  - action: utter_goodbye
+
+- story: unsupervised 7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: unsupervised
+  - action: utter_unsupervised
+  - action: utter_q7
+  - intent: cluster
+  - action: utter_cluster
+  - action: utter_q8
+  - intent: birch
+  - action: utter_birch
+  - action: utter_q8
+  - intent: deny
+  - action: utter_goodbye
+
+- story: unsupervised 8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: unsupervised
+  - action: utter_unsupervised
+  - action: utter_q7
+  - intent: cluster
+  - action: utter_cluster
+  - action: utter_q8
+  - intent: hierarchical
+  - action: utter_hierarchical
+  - action: utter_q8
+  - intent: deny
+  - action: utter_goodbye
+
+- story: unsupervised 9
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: unsupervised
+  - action: utter_unsupervised
+  - action: utter_q7
+  - intent: cluster
+  - action: utter_cluster
+  - action: utter_q8
+  - intent: Em
+  - action: utter_em
+  - action: utter_q8
+  - intent: kmeans
+  - action: utter_kmeans
+  - action: utter_q8
+  - intent: hierarchical
+  - action: utter_hierarchical
+  - action: utter_q8
+  - intent: birch
+  - action: utter_birch
+  - action: utter_q8
+  - intent: dbscan
+  - action: utter_dbscan
+  - action: utter_q7
+  - intent: ass_rules
+  - action: utter_association
+  - action: utter_goodbye
+
+- story: machine learning 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: reinforcement
+  - action: utter_reinforcement
+  - action: utter_q9
+  - intent: deny
+  - action: utter_goodbye
+
+- story: reinforcement 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: reinforcement
+  - action: utter_reinforcement
+  - action: utter_q9
+  - intent: qlearning
+  - action: utter_qlearn
+  - action: utter_q9
+  - intent: sarsa
+  - action: utter_sarsa
+  - action: utter_goodbye
+
+- story: reinforcement 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: reinforcement
+  - action: utter_reinforcement
+  - action: utter_q9
+  - intent: qlearning
+  - action: utter_qlearn
+  - action: utter_q9
+  - intent: deny
+  - action: utter_goodbye
+
+- story: reinforcement 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: reinforcement
+  - action: utter_reinforcement
+  - action: utter_q9
+  - intent: sarsa
+  - action: utter_sarsa
+  - action: utter_q9
+  - intent: deny
+  - action: utter_goodbye
+
+- story: reinforcement 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: machine_learning
+  - action: utter_ml
+  - action: utter_q
+  - intent: reinforcement
+  - action: utter_reinforcement
+  - action: utter_q9
+  - intent: sarsa
+  - action: utter_sarsa
+  - action: utter_q9
+  - intent: qlearning
+  - action: utter_qlearn
+  - action: utter_goodbye
+
+- story: data science 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: deny
+  - action: utter_goodbye
+
+- story: maths 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: probability
+  - action: utter_prob
+  - action: utter_maths
+  - intent: stats
+  - action: utter_stats
+  - action: utter_maths
+  - intent: bayes
+  - action: utter_bayes
+  - action: utter_goodbye
+
+- story: maths 1.1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: probability
+  - action: utter_prob
+  - action: utter_maths
+  - intent: bayes
+  - action: utter_bayes
+  - action: utter_maths
+  - intent: stats
+  - action: utter_stats
+  - action: utter_goodbye
+
+- story: maths 1.2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: bayes
+  - action: utter_bayes
+  - action: utter_maths
+  - intent: probability
+  - action: utter_prob
+  - action: utter_maths
+  - intent: stats
+  - action: utter_stats
+  - action: utter_goodbye
+
+- story: maths 1.3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: bayes
+  - action: utter_bayes
+  - action: utter_maths
+  - intent: stats
+  - action: utter_stats
+  - action: utter_maths
+  - intent: probability
+  - action: utter_prob
+  - action: utter_goodbye
+
+- story: maths 1.4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: stats
+  - action: utter_stats
+  - action: utter_maths
+  - intent: bayes
+  - action: utter_bayes
+  - action: utter_maths
+  - intent: probability
+  - action: utter_prob
+  - action: utter_goodbye
+
+- story: maths 1.5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: stats
+  - action: utter_stats
+  - action: utter_maths
+  - intent: probability
+  - action: utter_prob
+  - action: utter_maths
+  - intent: bayes
+  - action: utter_bayes
+  - action: utter_goodbye
+
+- story: maths 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: probability
+  - action: utter_prob
+  - action: utter_maths
+  - intent: deny
+  - action: utter_goodbye
+
+- story: maths 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: stats
+  - action: utter_stats
+  - action: utter_maths
+  - intent: deny
+  - action: utter_goodbye
+
+- story: maths 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: bayes
+  - action: utter_bayes
+  - action: utter_maths
+  - intent: deny
+  - action: utter_goodbye
+
+- story: maths 5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: probability
+  - action: utter_prob
+  - action: utter_maths
+  - intent: stats
+  - action: utter_stats
+  - action: utter_maths
+  - intent: deny
+  - action: utter_goodbye
+
+- story: maths 6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: probability
+  - action: utter_prob
+  - action: utter_maths
+  - intent: bayes
+  - action: utter_bayes
+  - action: utter_maths
+  - intent: deny
+  - action: utter_goodbye
+
+- story: maths 7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: bayes
+  - action: utter_bayes
+  - action: utter_maths
+  - intent: probability
+  - action: utter_prob
+  - action: utter_maths
+  - intent: deny
+  - action: utter_goodbye
+
+- story: maths 8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: bayes
+  - action: utter_bayes
+  - action: utter_maths
+  - intent: stats
+  - action: utter_stats
+  - action: utter_maths
+  - intent: deny
+  - action: utter_goodbye
+
+- story: maths 9
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: stats
+  - action: utter_stats
+  - action: utter_maths
+  - intent: bayes
+  - action: utter_bayes
+  - action: utter_maths
+  - intent: deny
+  - action: utter_goodbye
+
+- story: maths 10
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: maths
+  - action: utter_maths
+  - intent: stats
+  - action: utter_stats
+  - action: utter_maths
+  - intent: probability
+  - action: utter_prob
+  - action: utter_maths
+  - intent: deny
+  - action: utter_goodbye
+
+- story: data science 5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: data_visualization
+  - action: utter_datavisual
+  - action: utter_q1
+  - intent: deny
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+- story: happy play video path
+  steps:
+    - intent: play_video
+    - action: action_video

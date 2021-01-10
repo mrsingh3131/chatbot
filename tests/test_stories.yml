@@ -1,0 +1,81 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: data science 1
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      data science
+    intent: data_science
+  - action: utter_data_science
+
+- story: data science 2
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      data analysis
+    intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+  - user: |
+      bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: data analysis 1
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      data analysis
+    intent: data_analysis
+  - action: utter_da
+  - action: utter_q1
+
+  - user: |
+      eda
+    intent: eda
+  - action: utter_eda
+  - action: utter_q1
+
+- story: data analysis 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      data analysis
+    intent: utter_da
+  - action: utter_q1
+
+  - user: |
+      pca
+    intent: pca
+  - action: utter_pca
+  - action: utter_q1
+
+- story: happy path
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+
+
+- story: happy play video path
+  steps:
+  - user: |
+      website
+    intent: play_video
+  - action: action_video
+
